@@ -34,3 +34,30 @@ banking-ai-agent-rag/
 ├── data/
 │   └── sample_policy.txt    # Sample policy document
 
+📦 Installation
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run API
+uvicorn backend.main:app --reload
+
+🐳 Docker Deployment
+# Build and run with Docker
+docker build -t banking-ai-agent .
+docker run -p 8000:8000 banking-ai-agent
+
+🧪 Example Query
+curl -X POST http://localhost:8000/query \
+     -H "Content-Type: application/json" \
+     -d '{"question": "What is the process to close a fixed deposit?"}'
+
+🔧 Tech Stack
+LangChain – agent & RAG
+FastAPI – web backend
+FAISS – vector search
+Airflow – scheduling
+Docker – containerization
+OpenTelemetry – observability
+HuggingFace / DeepSeek – LLMs
+
+
