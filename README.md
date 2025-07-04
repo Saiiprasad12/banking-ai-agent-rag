@@ -1,1 +1,3 @@
-# banking-ai-agent-rag
+# Banking AI Agent with RAG
+
+See source files for full implementation.

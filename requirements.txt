@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+langchain
+faiss-cpu
+transformers
+huggingface_hub
+pydantic
+openai
+chromadb
+opentelemetry-sdk
+opentelemetry-instrumentation-fastapi
+apache-airflow
